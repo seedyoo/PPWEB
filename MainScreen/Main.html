@@ -25,7 +25,6 @@
 </head>
 <body>
 
-    <!-- header -->
     <header class="p-3 text-bg-dark">
         <!-- 사이드바 -->
         <div class="side-bar">
@@ -35,7 +34,7 @@
         </div>
 
 
-        <div class="top">
+        <div class="container">
 
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <!-- 메뉴 아이콘 -->
@@ -43,21 +42,20 @@
                     <a href="#" id="btn-menu"><i class="fa fa-bars"></i></a>
                 </div>
 
-
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="/MainScreen/Main.html" class="nav-link px-2 text-white">HOME</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">맛집검색</a></li>
-                        <li><a href="/MainScreen/Menu/Board.html" class="nav-link px-2 text-white">게시판</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">주문</a></li>
-                    </ul>
+                  <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/MainScreen/Main.html" class="nav-link px-2 text-white">HOME</a></li>
+                    <li><a href="/MainScreen/Menu/Delicious_search/Delicious_search.html" class="nav-link px-2 text-white">맛집검색</a></li>
+                    <li><a href="/MainScreen/Menu/Board/Board.html" class="nav-link px-2 text-white">게시판</a></li>
+                    <li><a href="/MainScreen/Menu/Order/Order.html" class="nav-link px-2 text-white">주문</a></li>
+                  </ul>
             
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                    </form>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
         
                 <div class="text-end">
                 <a href="/MainScreen/Login/Login.html" class="btn btn-outline-light me-2">로그인</a>
-                <a href="/MainScreen/Login/Sign_up.html" class="btn btn-warning me-2">회원가입</a>
+                <a href="/MainScreen/Login/Sign_up.html" class="btn btn-secondary me-2">회원가입</a>
 
                 </div>
                 <!-- 유저 아이콘 -->
@@ -70,7 +68,7 @@
       </header>
 
     <!-- section1 -->
-    <section id="main" class="container">
+    <section id="main" class="containers">
         <div class="slide">
             <div class="item"><img src="img/s01.png" alt="1"></div>
             <div class="item"><img src="img/s02.png" alt="2"></div>
@@ -78,9 +76,12 @@
         </div>
     </section>
     
+
+    
+    
     <!-- section2 -->
-    <section id="recent" class="container">
-        <h4>맛집 Best Rank(1~3위)</h4>
+    <h4>맛집 Best Rank(1~3위)</h4>
+    <section id="recent" class="containers">
         <div class="card-list">
             <!-- 카드 -->
             <div class="card">
@@ -156,7 +157,8 @@
     </section>
 
     <!-- section3 -->
-    <section id="info1" class="container info">
+    <h4>인기 레시피</h4>
+    <section id="info1" class="containers info">
         <div class="img-box">
             <a href="#">
             <img src="img/s04.jpg" alt="">
@@ -169,15 +171,15 @@
                     empty content. empty content. <br>
                     empty content.
                 </p>
-                <div class="btn-box">
-                    <a href="#" class="btn"><p onclick="alert('Click')"> 확인하기</p></a>
+                <div class="btn-box" onclick="alert('Click')">
+                    <a href="#" class="btn btn-primary rounded-pill px-3"><p> 확인하기</p></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- section4 -->
-    <section id="info2" class="container info">
+    <section id="info2" class="containers info">
         <div class="img-box">
             <a href="#">
             <img src="img/s05.jpg" alt="">
@@ -190,9 +192,8 @@
                     empty content. empty content. <br>
                     empty content.
                 </p>
-                <div class="btn-box">
-                    <a href="#" class="btn"><p onclick="alert('Click')"> 확인하기</p></a>
-                    
+                <div class="btn-box" onclick="alert('Click')">
+                    <a href="#" class="btn btn-primary rounded-pill px-3"><p> 확인하기</p></a>
                 </div>
             </div>
         </div>

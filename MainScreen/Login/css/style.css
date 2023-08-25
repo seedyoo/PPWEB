@@ -9,6 +9,12 @@ header .container .icon-box a {
     position: relative;
 }
 
+ /* 메인 */
+ .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
 .btn-blue { background-color: #3b5998; }
 .btn-blue:hover, .btn-blue:active, btn-blue:focus { background-color: #233763 !important; }
 
