@@ -6,7 +6,6 @@ header .container .icon-box {
 }
 header .container .icon-box a {
     font-size: 24px;
-    position: relative;
 }
 
 
@@ -16,6 +15,7 @@ header .container .icon-box a {
     width: 960px;
     margin: 0 auto;
   }
+
 
 
 /* containers */
@@ -177,7 +177,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 400px;
+    min-height: 200px;
     background-color: #232323;
     padding: 50px 0px 20px;
     color: white;
@@ -228,11 +228,13 @@ footer .copy {
     text-align: center; 
 }
 
+footer a {text-decoration: inherit; color: inherit;}
+
 /* 사이드바 */
 .side-bar {
     position: fixed;
     top: 0;
-    right: -300px;
+    left: 300px;
     bottom: 0;
     height: 100%;
     width: 300px;
@@ -244,7 +246,7 @@ footer .copy {
 
 /* 사이드바 오픈 */
 .side-bar.active {
-    right: 0;
+    left: 0;
 }
 
 .side-bar .btn-box { 
